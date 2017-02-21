@@ -1,0 +1,91 @@
+*{box-sizing: border-box}
+.clearfix:before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.slide-scroll-mod {
+    width: 1180px;
+    margin: 100px auto;
+    position: relative;
+    z-index: 1;
+}
+.slide-box{
+    width: 1180px;
+    overflow: hidden;
+}
+.slide-scroll-mod .slide-list {
+    position: relative;
+    overflow: hidden;
+    width: 1180px;
+    z-index: 1;
+}
+.slide-scroll-mod .slide-list > div {
+    margin: 0;
+    float: left;
+    width: 1180px;
+}
+.slide-scroll-mod .slide-list > div div {
+    margin: 0;
+}
+.slide-scroll-mod .num-box {
+    position: absolute;
+    z-index: 3;
+    bottom: 20px;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+}
+.slide-scroll-mod .num-box span {
+    display: inline-block;
+    margin: 0 12px;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+.slide-scroll-mod .num-box span.on {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+}
+.slide-scroll-mod .prev,
+.slide-scroll-mod .next {
+    position: absolute;
+    display: block;
+    top: 200px;
+}
+.slide-scroll-mod .arrow-boxl,
+.slide-scroll-mod .arrow-boxr {
+    display: block;
+    background:#ccc;
+    height: 100px;
+    width: 50px;
+    position: relative;
+}
+.slide-scroll-mod .arrow-boxl:hover,
+.slide-scroll-mod .arrow-boxr:hover {
+    opacity: .6;
+}
+
+.slide-scroll-mod .prev {
+    left: -60px;
+}
+.slide-scroll-mod .prev .arrow-boxl {
+    border-radius: 100px 0 0 100px;
+}
+
+.slide-scroll-mod .next {
+    right: -60px;
+}
+.slide-scroll-mod .next .arrow-boxr {
+    border-radius: 0 100px 100px 0;
+}
+

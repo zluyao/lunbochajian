@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/luobo.css">
+</head>
+<body>
+<div id="index-scroll" class="slide-scroll-mod">
+    <div class="slide-box">
+        <div class="slide-list clearfix">
+            <div class="rows clearfix">
+                <div class="every"><a href="javascript:;"><img src="img/1.jpg" alt=""></a></div>
+            </div>
+            <div class="rows clearfix">
+                <div class="every"><a href="javascript:;"><img src="img/2.jpg" alt=""></a></div>
+            </div>
+            <div class="rows clearfix">
+                <div class="every"><a href="javascript:;"><img src="img/3.jpg" alt=""></a></div>
+            </div>
+            <div class="rows clearfix">
+                <div class="every"><a href="javascript:;"><img src="img/4.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="prev">
+        <span class="arrow-boxl">
+        </span>
+    </a>
+    <a href="javascript:;" class="next">
+        <span class="arrow-boxr">
+        </span>
+    </a>
+    <div id="num_box" class="num-box"></div>
+</div>
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/scroll.js"></script>
+<script>
+    function indexScroll() {
+        var indexScroll = new loopScroll({
+            "ele": "index-scroll",
+            "showPicNum": "1",
+            "fineTuning": "0"
+        });
+        indexScroll.initialize();
+        indexScroll.num();
+        indexScroll.autoPlay();
+    };
+
+    $(function () {
+        indexScroll();
+    })
+</script>
+</html>
